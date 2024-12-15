@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    padding: 100px 125px;
+    color: white;
+    border-radius: 15px;
+    animation: loadingEffect 0.5s cubic-bezier(0.66, -1.15, 0, 1.36);;
+}
+
+@keyframes loadingEffect {
+    0% {
+        opacity: 0.8;
+        padding:100px 105px;
+    }
+   
+    100% {
+        opacity: 1;
+      
+        padding:100px 125px;
+    }
+}
+
+
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.imageWithDetails{
+    display: flex;
+    gap: 60px;
+}
+.frame{
+    height: 20rem;
+    width: 40%;
+
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.image{
+ object-fit: cover;
+ border-radius: 13px;
+}
+.detailedDesc{
+    width: 50%;
+ 
+}
+.detailedDesc h1{
+    font-size: 3.4rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+.detailedDesc p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+.detailedDesc .creator {
+  font-size: 19px;
+}
+.detailedDesc p span{
+    background: linear-gradient(90deg, #f9572a, #ffc905);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.procedureContainer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedure{
+    width: 90%;
+    margin-top: 20px;
+    background-color: rgb(107, 89, 89);
+    padding:30px;
+    border-radius: 10px;
+    color:black;
+    margin-inline: auto;
+}
+.procedure p{
+    font-size: 19px;
+    margin-bottom: 20px;
+    
+}

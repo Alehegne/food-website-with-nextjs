@@ -1,0 +1,64 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.loadingbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+   
+}
+.loadingbox span {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    animation: color-change 2s infinite, scale-bounce 1s infinite;
+}
+
+.loadingbox span:nth-child(1) {
+    animation-delay: 0s, 0s; /* Different delays for combined animations */
+}
+
+.loadingbox span:nth-child(2) {
+    animation-delay: 0.2s, 0.2s;
+}
+
+.loadingbox span:nth-child(3) {
+    animation-delay: 0.4s, 0.4s;
+}
+
+@keyframes scale-bounce {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
